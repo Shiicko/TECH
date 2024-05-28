@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Tecnología</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="query.css" />
+    <link rel="icon" type="image/png" href="/ico/ico.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="containerHead">
+        <div class="logo">
+          <h1>Tienda de Tecnología</h1>
+        </div>
+        <div class="nav-cart-container">
+          <nav class="nav">
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#productosTech">Productos</a></li>
+              <li><a href="#newss">Noticias</a></li>
+              <li><a href="#contacts">Contacto</a></li>
+              <li>
+                <a href="#" id="carrito-link"
+                  ><img src="/ico/carrito.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="cart">
+        <h2>CARRITO</h2>
+        <ul id="lista-carrito"></ul>
+        <h3 id="total"></h3>
+        <button style="padding: 5px; margin: 5px; background-color: orange">
+          Finalizar compra
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container2">
+        <h1>Bienvenido a nuestra tienda de tecnología</h1>
+        <a href="#productosTech" class="cta-button">Explorar productos</a>
+      </div>
+    </section>
+
+    <h2 class="section-title">Productos destacados</h2>
+    <section class="featured-products" id="productosTech">
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="/img/pc1.jpg" alt="Producto 1" />
+            <h3>Producto 1</h3>
+            <p>Descripción corta del producto 1.</p>
+            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
+              >Ver mas</a
+            >
+            <a
+              href="#"
+              class="product-button"
+              data-product-id="1"
+              data-product-name="Producto 1"
+              >Agregar al carrito</a
+            >
+          </div>
+
+          <div class="product-item">
+            <img src="/img/hero.jpg" alt="Producto 2" />
+            <h3>Producto 2</h3>
+            <p>Descripción corta del producto 2.</p>
+            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
+              >Ver mas</a
+            >
+            <a
+              href="#"
+              class="product-button"
+              data-product-id="2"
+              data-product-name="Producto 2"
+              >Agregar al carrito</a
+            >
+          </div>
+
+          <div class="product-item">
+            <img src="/img/pc3.jpg" alt="Producto 3" />
+            <h3>Producto 3</h3>
+            <p>Descripción corta del producto 3.</p>
+            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
+              >Ver mas</a
+            >
+            <a
+              href="#"
+              class="product-button"
+              data-product-id="3"
+              data-product-name="Producto 3"
+              >Agregar al carrito</a
+            >
+          </div>
+
+          <div class="product-item">
+            <img src="/img/pc4.jpg" alt="Producto 4" />
+            <h3>Producto 4</h3>
+            <p>Descripción corta del producto 4.</p>
+            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
+              >Ver mas</a
+            >
+            <a
+              href="#"
+              class="product-button"
+              data-product-id="4"
+              data-product-name="Producto 4"
+              >Agregar al carrito</a
+            >
+          </div>
+          <div class="product-item">
+            <img src="/img/pc2.jpg" alt="Producto x" />
+            <h3>Producto 5</h3>
+            <p>Descripción corta del producto 5.</p>
+            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
+              >Ver mas</a
+            >
+            <a
+              href="#"
+              class="product-button"
+              data-product-id="5"
+              data-product-name="Producto 5"
+              >Agregar al carrito</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newss" class="latest-news dark-section">
+      <div class="container">
+        <h2>Noticias gamers!</h2>
+        <div class="news-container">
+          <div class="news-item">
+            <div class="news-content">
+              <h3>AMD Ryzen AI</h3>
+              <p>
+                Gracias a las PC con IA de segunda generación con tecnología de
+                AMD Ryzen™ AI¹, los usuarios tendrán la llave para desbloquear
+                experiencias mágicas de IA.
+              </p>
+              <a
+                href="https://www.amd.com/es/products/processors/consumer/ryzen-ai.html"
+                class="read-more"
+                target="_blank"
+                >Más información</a
+              >
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-content">
+              <h3>AMD EXPO™</h3>
+              <p>
+                Los perfiles extendidos de AMD para overclocking (tecnología AMD
+                EXPO™) se desarrollaron para permitir compatibilidad de
+                overclocking de memoria fácil de usar para todos los tipos de
+                memoria, lo que les brinda a los usuarios un camino sencillo
+                hacia la potencia acelerada para agilizar la memoria en su
+                sistema.
+              </p>
+              <a
+                href="https://www.amd.com/es/products/processors/technologies/expo.html#partners"
+                target="_blank"
+                class="read-more"
+                >Más información</a
+              >
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-content">
+              <h3>Lunar Lake</h3>
+              <p>
+                ¡No te pierdas nuestras ofertas especiales para celebrar la
+                llegada de nuevos productos! ¡Visita nuestra tienda y descubre
+                las mejores promociones!
+              </p>
+              <a
+                href="https://www.intel.la/content/www/xl/es/newsroom/news/intels-lunar-lake-processors-arriving-q3-2024.html#gs.9hbfjx"
+                target="_blank"
+                class="read-more"
+                >Más información</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacts">
+      <div class="contact-wrapper">
+        <div style="margin-bottom: 15px">
+          <h2>Contacto</h2>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Instagram</h3>
+            <p>
+              <a href="http://instagram.com" target="_blank">INSTA</a>
+            </p>
+          </div>
+          <div class="contact-item">
+            <h3>Teléfono</h3>
+            <p>+123 456 789</p>
+          </div>
+          <div class="contact-item">
+            <h3>Correo Electrónico</h3>
+            <p><a href="mailto:info@tudominio.com">info@tudominio.com</a></p>
+          </div>
+          <div class="contact-item">
+            <h3>Dirección</h3>
+            <p>Calle Falsa 123, Ciudad, País</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="formulario">
+      <div class="formulario-wrapper">
+        <div class="section-titleCont">
+          <h2>Formulario de Contacto</h2>
+        </div>
+        <form action="#" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Todos los derechos reservados &copy; 2024 BRIAN</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

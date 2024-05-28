@@ -1,0 +1,21 @@
+/* Media query para ocultar el navbar en pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .nav li a {
+    display: none;
+  }
+  .logo {
+    display: flex;
+    align-self: end;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 300px; /* Ajusta la altura según tu preferencia */
+  }
+  .product-item {
+    width: calc(50% - 40px);
+  }
+  #carrito-link {
+    display: flex;
+    justify-content: center;
+  }
+}
