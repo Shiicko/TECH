@@ -55,88 +55,19 @@
     </section>
 
     <h2 class="section-title">Productos destacados</h2>
+
     <section class="featured-products" id="productosTech">
+      <div class="filtrar">
+        <select id="category-filter">
+          <option value="">Seleccionar categoría</option>
+          <option value="Oficina">Oficina</option>
+          <option value="Gamer">Gamer</option>
+          <option value="Accesorios">Accesorios</option>
+        </select>
+        <button id="filter-button">Filtrar</button>
+      </div>
       <div class="container">
-        <div class="product-grid">
-          <div class="product-item">
-            <img src="/img/pc1.jpg" alt="Producto 1" />
-            <h3>Producto 1</h3>
-            <p>Descripción corta del producto 1.</p>
-            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
-              >Ver mas</a
-            >
-            <a
-              href="#"
-              class="product-button"
-              data-product-id="1"
-              data-product-name="Producto 1"
-              >Agregar al carrito</a
-            >
-          </div>
-
-          <div class="product-item">
-            <img src="/img/hero.jpg" alt="Producto 2" />
-            <h3>Producto 2</h3>
-            <p>Descripción corta del producto 2.</p>
-            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
-              >Ver mas</a
-            >
-            <a
-              href="#"
-              class="product-button"
-              data-product-id="2"
-              data-product-name="Producto 2"
-              >Agregar al carrito</a
-            >
-          </div>
-
-          <div class="product-item">
-            <img src="/img/pc3.jpg" alt="Producto 3" />
-            <h3>Producto 3</h3>
-            <p>Descripción corta del producto 3.</p>
-            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
-              >Ver mas</a
-            >
-            <a
-              href="#"
-              class="product-button"
-              data-product-id="3"
-              data-product-name="Producto 3"
-              >Agregar al carrito</a
-            >
-          </div>
-
-          <div class="product-item">
-            <img src="/img/pc4.jpg" alt="Producto 4" />
-            <h3>Producto 4</h3>
-            <p>Descripción corta del producto 4.</p>
-            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
-              >Ver mas</a
-            >
-            <a
-              href="#"
-              class="product-button"
-              data-product-id="4"
-              data-product-name="Producto 4"
-              >Agregar al carrito</a
-            >
-          </div>
-          <div class="product-item">
-            <img src="/img/pc2.jpg" alt="Producto x" />
-            <h3>Producto 5</h3>
-            <p>Descripción corta del producto 5.</p>
-            <a href="/externs/pc1.html" class="cta-button" style="margin: 5px"
-              >Ver mas</a
-            >
-            <a
-              href="#"
-              class="product-button"
-              data-product-id="5"
-              data-product-name="Producto 5"
-              >Agregar al carrito</a
-            >
-          </div>
-        </div>
+        <div class="product-grid" id="product-grid"></div>
       </div>
     </section>
 
@@ -231,7 +162,12 @@
         <div class="section-titleCont">
           <h2>Formulario de Contacto</h2>
         </div>
-        <form action="#" method="post" class="contact-form">
+        <form
+          action="#"
+          method="post"
+          class="contact-form"
+          onsubmit="return validarFormulario()"
+        >
           <div class="form-group">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required />
@@ -246,6 +182,12 @@
           </div>
           <button type="submit" class="submit-btn">Enviar</button>
         </form>
+        <div id="mensaje-exito" class="mensaje-exito" style="display: none">
+          ¡Mensaje enviado con éxito!
+        </div>
+        <div id="mensaje-error" class="mensaje-error" style="display: none">
+          Por favor, completa todos los campos correctamente.
+        </div>
       </div>
     </section>
 

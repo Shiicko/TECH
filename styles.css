@@ -481,3 +481,9 @@ button {
   text-align: center;
   padding: 20px 0;
 }
+
+.filtrar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
